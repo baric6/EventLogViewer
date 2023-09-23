@@ -33,7 +33,7 @@ def readEventLogs():
 if __name__ == "__main__":
     df = readEventLogs()
     eventStorage = EventStorage(df)
-    #eventStorage.getDF()
-    #eventStorage.getHead()
-    #eventStorage.getColumnByName("Event ID")
+    eventStorage.getDF()
+    eventStorage.getHead()
+    eventStorage.getColumnByName("Event ID")
     eventStorage.exportToJson()
